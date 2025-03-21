@@ -1,0 +1,338 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starlink Connect - Internet Satelital de Alta Velocidad</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fuentes Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}">
+    
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top cyber-nav">
+        <div class="container">
+            <a class="navbar-brand orbitron-font neon-text" href="#">
+                <i class="fas fa-satellite me-2"></i>STARNET
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link cyber-link" href="#hero">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link cyber-link" href="#features">Tech Specs</a></li>
+                    <li class="nav-item"><a class="nav-link cyber-link" href="#plans">Planes</a></li>
+                    <li class="nav-item"><a class="nav-link cyber-link" href="#contact">Conexión</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12 text-center text-white">
+                        <h1 class="display-4 orbitron-font mb-4">Internet de Alta Velocidad en Cualquier Lugar</h1>
+                        <p class="lead mb-5">Velocidades de hasta 1 Gbps · Latencia ultra baja · Instalación en 24h</p>
+                        <button class="btn btn-primary btn-lg cta-button">Prueba Gratis por 30 Días</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="orbitron-font">Tecnología de Vanguardia</h2>
+                    <p class="text-muted" style="color: #fff !important;">Impulsado por la última generación de satélites LEO</p>
+                </div>
+            </div>
+            <!-- Tarjetas Tecnológicas Cyber -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 tech-card" data-tech-type="speed">
+                        <div class="card-body text-center">
+                            <i class="fas fa-rocket fa-3x mb-3 cyber-icon"></i>
+                            <h5 class="orbitron-font neon-cyan">1 Gbps Symmetrical</h5>
+                            <p class="cyber-text">Velocidades simétricas de subida/bajada con tecnología QuantumLink™</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nueva Tarjeta 2 - Baja Latencia -->
+                <div class="col-md-4">
+                    <div class="card h-100 tech-card" data-tech-type="latency">
+                        <div class="card-body text-center">
+                            <i class="fas fa-brain fa-3x mb-3 cyber-icon"></i>
+                            <h5 class="orbitron-font neon-pink">25ms Ultra-Low Latency</h5>
+                            <p class="cyber-text">Experiencia de gaming y streaming en tiempo real</p>
+                            <div class="cyber-badge">Nueva Red LEO</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nueva Tarjeta 3 - Cobertura Global -->
+                <div class="col-md-4">
+                    <div class="card h-100 tech-card" data-tech-type="coverage">
+                        <div class="card-body text-center">
+                            <i class="fas fa-globe-americas fa-3x mb-3 cyber-icon"></i>
+                            <h5 class="orbitron-font neon-cyan">Global Coverage</h5>
+                            <p class="cyber-text">Cobertura en zonas remotas y urbanas por igual</p>
+                            <div class="cyber-badge">127 Satélites</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Planes -->
+    <section id="plans" class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="orbitron-font neon-cyan">Planes de Conexión</h2>
+                    <p class="cyber-text">Elige tu nivel de acceso a la red cuántica</p>
+                </div>
+            </div>
+    
+            <div class="row g-4">
+                <!-- Plan Básico -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card" data-plan="basic">
+                        <div class="card-body text-center">
+                            <div class="cyber-badge-plan">Entry Level</div>
+                            <i class="fas fa-satellite-dish fa-3x cyber-icon mb-4"></i>
+                            <h3 class="orbitron-font neon-cyan">Básico</h3>
+                            <div class="price-container mb-3">
+                                <span class="price">$49</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <ul class="cyber-list">
+                                <li><i class="fas fa-terminal me-2"></i>100 Mbps Simétricos</li>
+                                <li><i class="fas fa-clock me-2"></i>Latencia 50ms</li>
+                                <li><i class="fas fa-database me-2"></i>1TB Datos</li>
+                                <li><i class="fas fa-user me-2"></i>5 Dispositivos</li>
+                            </ul>
+                            <button class="btn btn-cyber mt-3">Iniciar Protocolo</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Plan Pro (Destacado) -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card pro-plan" data-plan="pro">
+                        <div class="card-body text-center">
+                            <div class="cyber-badge-plan neon-pink">Recomendado</div>
+                            <i class="fas fa-rocket fa-3x cyber-icon mb-4"></i>
+                            <h3 class="orbitron-font neon-pink">Pro</h3>
+                            <div class="price-container mb-3">
+                                <span class="price">$99</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <ul class="cyber-list">
+                                <li><i class="fas fa-tachometer-alt me-2"></i>500 Mbps Simétricos</li>
+                                <li><i class="fas fa-bolt me-2"></i>Latencia 25ms</li>
+                                <li><i class="fas fa-infinity me-2"></i>Datos Ilimitados</li>
+                                <li><i class="fas fa-users me-2"></i>15 Dispositivos</li>
+                                <li><i class="fas fa-shield-alt me-2"></i>Prioridad Máxima</li>
+                            </ul>
+                            <button class="btn btn-cyber pro-btn mt-3">Optimizar Red</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Plan Enterprise -->
+                <div class="col-md-4">
+                    <div class="card h-100 pricing-card" data-plan="enterprise">
+                        <div class="card-body text-center">
+                            <div class="cyber-badge-plan">Corporativo</div>
+                            <i class="fas fa-globe fa-3x cyber-icon mb-4"></i>
+                            <h3 class="orbitron-font neon-cyan">Enterprise</h3>
+                            <div class="price-container mb-3">
+                                <span class="price">$299</span>
+                                <span class="period">/mes</span>
+                            </div>
+                            <ul class="cyber-list">
+                                <li><i class="fas fa-gem me-2"></i>1 Gbps Simétricos</li>
+                                <li><i class="fas fa-network-wired me-2"></i>Red Dedicada</li>
+                                <li><i class="fas fa-server me-2"></i>Servidores Privados</li>
+                                <li><i class="fas fa-user-shield me-2"></i>50 Dispositivos</li>
+                                <li><i class="fas fa-headset me-2"></i>Soporte 24/7 VIP</li>
+                            </ul>
+                            <button class="btn btn-cyber mt-3">Escalar Red</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contact" class="py-5 cyber-contact">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="orbitron-font neon-pink">Iniciar Protocolo de Conexión</h2>
+                    <p class="cyber-subtitle">Completa los campos de acceso</p>
+                </div>
+            </div>
+            
+            <form id="leadForm" class="cyber-form" method="POST">
+                {% csrf_token %}
+                
+                <div class="cyber-form-container">
+                    <!-- Fila Superior -->
+                    <div class="row gx-4 gy-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="input-group cyber-input">
+                                <span class="input-icon neon-cyan"><i class="fas fa-user-astronaut"></i></span>
+                                <input type="text" class="form-control cyber-field" name="name" 
+                                       placeholder="Nombre completo" required>
+                                <div class="glow-bar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="input-group cyber-input">
+                                <span class="input-icon neon-pink"><i class="fas fa-satellite-dish"></i></span>
+                                <input type="email" class="form-control cyber-field" name="email" 
+                                       placeholder="Correo electrónico" required>
+                                <div class="glow-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Fila Media -->
+                    <div class="row gx-4 gy-3 mb-4">
+                        <div class="col-md-6">
+                            <div class="input-group cyber-input">
+                                <span class="input-icon neon-cyan"><i class="fas fa-phone-volume"></i></span>
+                                <input type="tel" class="form-control cyber-field" name="phone" 
+                                       placeholder="Número de contacto" required>
+                                <div class="glow-bar"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="input-group cyber-input">
+                                <span class="input-icon neon-pink"><i class="fas fa-network-wired"></i></span>
+                                <select class="form-select cyber-select" name="plan" required>
+                                    <option value="">Selecciona tu plan de acceso</option>
+                                    <option value="basic">Básico 100Mbps</option>
+                                    <option value="pro">Pro 500Mbps</option>
+                                    <option value="enterprise">Enterprise 1Gbps</option>
+                                </select>
+                                <div class="glow-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Checkbox de Términos -->
+                    <div class="row mb-4">
+                        <div class="col-12">
+                            <div class="form-check cyber-check">
+                                <input class="form-check-input" type="checkbox" id="terms" required>
+                                <label class="form-check-label cyber-check-label" for="terms">
+                                    Acepto los <a href="#" class="neon-link">términos del servicio</a> y 
+                                    <a href="#" class="neon-link">política cuántica</a>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Botón de Envío -->
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn cyber-submit">
+                                <span class="submit-text">Iniciar Secuencia</span>
+                                <i class="fas fa-paper-plane submit-icon"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="cyber-footer" style="padding: 60px 0;">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Columna 1: Logo y Descripción -->
+                <div class="col-md-4">
+                    <div class="footer-brand">
+                        <h3 class="orbitron-font neon-cyan mb-3">
+                            <i class="fas fa-satellite"></i> STARNET
+                        </h3>
+                        <p class="footer-text">Conectando el futuro con tecnología cuántica</p>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Columna 2: Enlaces Rápidos -->
+                <div class="col-md-2">
+                    <h4 class="footer-title orbitron-font">Accesos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero" class="footer-link">Inicio</a></li>
+                        <li><a href="#features" class="footer-link">Tecnología</a></li>
+                        <li><a href="#plans" class="footer-link">Planes</a></li>
+                        <li><a href="#contact" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Columna 3: Contacto -->
+                <div class="col-md-3">
+                    <h4 class="footer-title orbitron-font">Conexión</h4>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-headset me-2 neon-cyan"></i>Soporte 24/7</li>
+                        <li><i class="fas fa-envelope me-2 neon-cyan"></i>soporte@starnet.com</li>
+                        <li><i class="fas fa-phone me-2 neon-cyan"></i>+1 (555) 234-5678</li>
+                    </ul>
+                </div>
+    
+                <!-- Columna 4: Dashboard Access -->
+                <div class="col-md-3">
+                    <div class="dashboard-access">
+                        <h4 class="footer-title orbitron-font">Panel de Control</h4>
+                        <a href="" class="btn btn-dashboard">
+                            <i class="fas fa-terminal me-2"></i>Acceder al Dashboard
+                        </a>
+                        <div class="mt-3">
+                            <small class="text-muted" style="color: #fff !important;">Acceso exclusivo para administradores</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Divider -->
+            <div class="footer-divider my-4"></div>
+    
+            <!-- Copyright -->
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">
+                        © 2025 STARNET Quantum Communications. 
+                        <span class="legal-links">
+                            <a href="#" class="legal-link">Privacidad</a> | 
+                            <a href="#" class="legal-link">Términos</a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>
