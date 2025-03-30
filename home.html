@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Fuentes Google -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
@@ -40,7 +42,7 @@
         <div class="hero-overlay">
             <div class="container h-100">
                 <div class="row h-100 align-items-center">
-                    <div class="col-12 text-center text-white">
+                    <div class="col-12 text-center text-white" data-aos="fade-up" data-aos-duration="1000">
                         <h1 class="display-4 orbitron-font mb-4">Internet de Alta Velocidad en Cualquier Lugar</h1>
                         <p class="lead mb-5">Velocidades de hasta 1 Gbps · Latencia ultra baja · Instalación en 24h</p>
                         <button class="btn btn-primary btn-lg cta-button">Prueba Gratis por 30 Días</button>
@@ -59,7 +61,7 @@
             </div>
             <!-- Tarjetas Tecnológicas Cyber -->
             <div class="row g-4">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 tech-card" data-tech-type="speed">
                         <div class="card-body text-center">
                             <i class="fas fa-rocket fa-3x mb-3 cyber-icon"></i>
@@ -69,7 +71,7 @@
                     </div>
                 </div>
                 <!-- Nueva Tarjeta 2 - Baja Latencia -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 tech-card" data-tech-type="latency">
                         <div class="card-body text-center">
                             <i class="fas fa-brain fa-3x mb-3 cyber-icon"></i>
@@ -80,7 +82,7 @@
                     </div>
                 </div>
                 <!-- Nueva Tarjeta 3 - Cobertura Global -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 tech-card" data-tech-type="coverage">
                         <div class="card-body text-center">
                             <i class="fas fa-globe-americas fa-3x mb-3 cyber-icon"></i>
@@ -105,7 +107,7 @@
     
             <div class="row g-4">
                 <!-- Plan Básico -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 pricing-card" data-plan="basic">
                         <div class="card-body text-center">
                             <div class="cyber-badge-plan">Entry Level</div>
@@ -127,7 +129,7 @@
                 </div>
     
                 <!-- Plan Pro (Destacado) -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 pricing-card pro-plan" data-plan="pro">
                         <div class="card-body text-center">
                             <div class="cyber-badge-plan neon-pink">Recomendado</div>
@@ -150,7 +152,7 @@
                 </div>
     
                 <!-- Plan Enterprise -->
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 pricing-card" data-plan="enterprise">
                         <div class="card-body text-center">
                             <div class="cyber-badge-plan">Corporativo</div>
@@ -184,7 +186,7 @@
                 </div>
             </div>
             
-            <form id="leadForm" class="cyber-form" action="thankyou_page.html" method="POST">
+            <form id="leadForm" class="cyber-form" action="thankyou_page.html" method="POST" data-aos="fade-up">
                 
                 <div class="cyber-form-container">
                     <!-- Fila Superior -->
@@ -332,5 +334,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ScrollReveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,125 @@
+.cyber-login {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+    background: linear-gradient(45deg, 
+        rgba(12, 12, 24, 0.048),
+        url('') center/cover;
+    padding: 100px 0;
+}
+
+.login-container {
+    background: rgba(10, 10, 18, 0.9);
+    border: 2px solid var(--neon-cyan);
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+.holographic-overlay {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(0, 255, 255, 0.03),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: scan 8s infinite linear;
+}
+
+.login-header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+.cyber-subtitle {
+    color: #8a8a9e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+}
+
+.login-form {
+    position: relative;
+    z-index: 1;
+}
+
+.cyber-check .form-check-input {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.25rem;
+}
+
+.cyber-submit {
+    background: var(--cyber-gradient);
+    border: none;
+    padding: 15px 40px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cyber-submit:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 25px var(--neon-pink);
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--neon-cyan);
+    transform: translateY(-3px);
+}
+
+@keyframes scan {
+    0% { transform: rotate(45deg) translateX(-50%); }
+    100% { transform: rotate(45deg) translateX(50%); }
+}
+
+@media (max-width: 768px) {
+    .cyber-login {
+        padding: 60px 0;
+    }
+    
+    .login-container {
+        padding: 1.5rem;
+    }
+    
+    .cyber-submit {
+        padding: 12px 20px;
+    }
+}
+
+.login-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    position: relative;
+}
+
+/* Versión responsive */
+@media (max-width: 768px) {
+    .cyber-login {
+        padding: 1rem;
+    }
+    
+    .login-container {
+        max-width: 100%;
+    }
+}
